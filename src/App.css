@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar */
+
+.navbar-branding-mobile {
+  margin-top: 12px;
+  padding-left: 12px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.4rem;
+}
+
+.navbar {
+  background-color: rgb(218, 218, 218);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 57px;
+  z-index: 1;
+}
+
+.navbar-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-around;
+  right: -33vw;
+  list-style-type: none;
+  height: 57px;
+}
+
+.navbar-list-item {
+  text-align: center;
+  width: 100px;
+}
+
+.navbar-link {
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  padding: 5px 0;
+}
+
+.navbar-link:hover {
+  background-color: rgb(185, 185, 185);
+  font-size: 1.1rem;
+  margin-top: -2px;
+}
+
+
+.navbar {
+  background-color: rgb(241, 241, 241);
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.295);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 57px;
+  z-index: 1;
+}
+
+/* FOOTER */
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  margin-top: -57px;
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    display: none;
+  }
+}
+
+  @media (min-width: 769px) {
+    .navbar-branding-mobile {
+        display: none;
+    }
+}

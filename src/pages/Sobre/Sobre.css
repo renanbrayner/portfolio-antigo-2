@@ -1,0 +1,60 @@
+.sobre {
+    display: flex;
+    width: 100vw;
+    margin-top: 0px;
+    flex-direction: row;
+}
+
+.sobre-spacer {
+    width: 20vw;
+    min-width: 289px;
+    height: 100vh;
+}
+
+.sobre-content {
+    margin: 37px auto;
+}
+
+.sobre h1 {
+    margin-top: 109px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 2px;  
+}
+
+.sobre p {
+    margin: auto;
+    width: 33vw;
+    text-align: justify;
+}
+
+.sobre-last {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .sobre {
+        text-align: center;
+        display: block;
+        width: 50vw;
+        margin: 57px auto;
+        margin-bottom: 0;
+    }
+
+    .sobre h1 {
+        padding-top: 57px;
+    }
+
+    .sobre p {
+        margin: auto;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .sobre-spacer {
+        display: none;
+    }
+
+}

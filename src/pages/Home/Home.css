@@ -1,0 +1,57 @@
+.home {
+    display: flex;
+    width: 100vw;
+    margin-top: 0px;
+    flex-direction: row;
+}
+
+.home-spacer {
+    width: 20vw;
+    min-width: 289px;
+    height: 100vh;
+}
+
+.home-content{
+    margin: 37px auto;
+    width: 100%;
+}
+
+.home h1 {
+    margin-top: 109px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 2px;
+}
+
+.tile-flex {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.project-background {
+    width: 19vw;
+    height: 10vw;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .home {
+        display: block;
+        width: 100%;
+        margin-right: 1vw;
+        float: right;
+        margin-top: 57px;
+    }
+
+    .home-spacer {
+        display: none;
+    }
+
+    .tile-flex {
+        flex-direction: column;
+    }
+}
