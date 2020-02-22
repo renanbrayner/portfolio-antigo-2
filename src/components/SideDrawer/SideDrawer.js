@@ -17,8 +17,8 @@ function SideDrawer(props) {
     return(
         <nav className={drawerClasses}>
             <ul>
-                <li><Link to="/" className="side-drawer-link" onClick={props.close}>Projetos</Link></li>
-                <li><Link to="/sobre" className="side-drawer-link" onClick={props.close}>Sobre</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/'} className="side-drawer-link" onClick={props.close}>Projetos</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/sobre'} className="side-drawer-link" onClick={props.close}>Sobre</Link></li>
                 <li><a href={pdfData} download onClick={props.close}>Baixar Currículo</a></li>
             </ul>
         </nav>
