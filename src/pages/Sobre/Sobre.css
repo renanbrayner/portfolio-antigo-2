@@ -33,12 +33,30 @@
     padding-bottom: 20px;
 }
 
+.sobre-photo {
+    background: url(../../assets/profile.jpg);
+    width: 40vw;
+    max-width: 170px;
+    height: 40vw;
+    max-height: 170px;
+    margin: auto;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+    .sobre-photo {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
 
     .sobre {
         text-align: center;
         display: block;
-        width: 50vw;
+        width: 80vw;
         margin: 57px auto;
         margin-bottom: 0;
     }
@@ -56,5 +74,4 @@
     .sobre-spacer {
         display: none;
     }
-
 }

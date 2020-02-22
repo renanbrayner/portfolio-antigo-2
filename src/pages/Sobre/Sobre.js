@@ -32,6 +32,7 @@ function Sobre() {
             <div className="sobre-spacer"></div>
             <div className="sobre-content">
                 <h1>Sobre Mim</h1>
+                <div className="sobre-photo"></div>
                 <p><strong>{cumprimento}</strong>, meu nome é Renan, tenho 20 anos e sou um desenvolvedor. Estou ingresso na faculdade de análise e desenvolvimento de sistemas com o objetivo de me profissionalizar e busco ingressar no mercado de trabalho e por em prática meus conhecimentos em JavaScript, Html, CSS, Sass, React e Github.</p>
                 <p className="sobre-last">Tenho um bom pensamento analítico e sou atencioso com detalhes, gosto de trabalhar em equipe principalmente se a comunicação for clara e objetiva, sou uma pessoa criativa e além de programar tenho hobbys como desenhar e pintar.</p>
             </div>
