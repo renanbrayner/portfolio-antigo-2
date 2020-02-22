@@ -51,13 +51,13 @@ function App() {
             <p className="navbar-branding-mobile">Renan Brayner</p>
             <ul className="navbar-list">
               <li className="navbar-list-item">
-                <Link to="./" className="navbar-link">Projetos</Link>
+                <Link to={process.env.PUBLIC_URL + '/'} className="navbar-link">Projetos</Link>
               </li>
               <li className="navbar-list-item">
-                <Link to="./sobre" className="navbar-link">Sobre</Link>
+                <Link to={process.env.PUBLIC_URL + '/sobre'} className="navbar-link">Sobre</Link>
               </li>
               <li className="navbar-list-item">
-                <Link to="./curriculo" className="navbar-link">Currículo</Link>
+                <Link to={process.env.PUBLIC_URL + '/curriculo'} className="navbar-link">Currículo</Link>
               </li>
             </ul>
           </nav>
