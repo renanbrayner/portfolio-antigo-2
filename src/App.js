@@ -61,9 +61,9 @@ function App() {
               </li>
             </ul>
           </nav>
-          <Route path="/" exact render={()=> <Home/>}/>
-          <Route path="/sobre" render={()=> <Sobre/>}/>
-          <Route path="/curriculo" render={()=> <Curriculo/>}/>
+          <Route path="./" exact render={()=> <Home/>}/>
+          <Route path="./sobre" render={()=> <Sobre/>}/>
+          <Route path="./curriculo" render={()=> <Curriculo/>}/>
         </div>
       </div>
     </Router>
