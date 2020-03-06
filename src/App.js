@@ -51,20 +51,20 @@ function App() {
             <p className="navbar-branding-mobile">Renan Brayner</p>
             <ul className="navbar-list">
               <li className="navbar-list-item">
-                <Link to={process.env.PUBLIC_URL + '/'} className="navbar-link">Projetos</Link>
+                <Link to='/' className="navbar-link">Projetos</Link>
               </li>
               <li className="navbar-list-item">
-                <Link to={process.env.PUBLIC_URL + '/sobre'} className="navbar-link">Sobre</Link>
+                <Link to='/sobre' className="navbar-link">Sobre</Link>
               </li>
               <li className="navbar-list-item">
-                <Link to={process.env.PUBLIC_URL + '/curriculo'} className="navbar-link">Currículo</Link>
+                <Link to='/curriculo' className="navbar-link">Currículo</Link>
               </li>
             </ul>
           </nav>
           <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} exact render={()=> <Home/>}/>
-            <Route path={process.env.PUBLIC_URL + '/sobre'} render={()=> <Sobre/>}/>
-            <Route path={process.env.PUBLIC_URL + '/curriculo'} render={()=> <Curriculo/>}/>
+            <Route path='/' exact render={()=> <Home/>}/>
+            <Route path='/sobre' render={()=> <Sobre/>}/>
+            <Route path='/curriculo' render={()=> <Curriculo/>}/>
           </Switch>
         </div>
       </div>
