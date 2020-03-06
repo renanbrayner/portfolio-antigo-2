@@ -61,9 +61,11 @@ function App() {
               </li>
             </ul>
           </nav>
-          <Route path={process.env.PUBLIC_URL + '/'} exact render={()=> <Home/>}/>
-          <Route path={process.env.PUBLIC_URL + '/sobre'} render={()=> <Sobre/>}/>
-          <Route path={process.env.PUBLIC_URL + '/curriculo'} render={()=> <Curriculo/>}/>
+          <Switch>
+            <Route path={process.env.PUBLIC_URL + '/'} exact render={()=> <Home/>}/>
+            <Route path={process.env.PUBLIC_URL + '/sobre'} render={()=> <Sobre/>}/>
+            <Route path={process.env.PUBLIC_URL + '/curriculo'} render={()=> <Curriculo/>}/>
+          </Switch>
         </div>
       </div>
     </Router>
